@@ -603,6 +603,61 @@
                 font-size: 1.2rem;
             }
         }
+        .project-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    transition:.3s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 45px rgba(0,0,0,.18);
+}
+
+/* Image container */
+.project-image{
+    width:100%;
+    height:240px;          /* control image height */
+    overflow:hidden;       /* 🔥 important */
+    border-radius:18px 18px 0 0;
+}
+
+/* Actual image */
+.project-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;      /* 🔥 keeps building centered */
+    display:block;
+}
+
+/* Content */
+.project-content{
+    padding:20px 22px;
+}
+
+.project-status{
+    display:inline-block;
+    background:#6f8f6d;
+    color:#fff;
+    font-size:13px;
+    padding:6px 14px;
+    border-radius:20px;
+    margin-bottom:12px;
+}
+
+.project-content h3{
+    margin:8px 0 6px;
+    font-size:22px;
+}
+
+.project-location{
+    color:#666;
+    font-size:14px;
+}
+
+
     </style>
 </head>
 <body>
@@ -654,13 +709,18 @@
         <div class="projects-grid">
             <!-- Completed Projects -->
             <div class="project-card">
-                <div class="project-image">🏘️</div>
+                <div class="project-image">
+                    <img 
+                      src="assets/images/sholinganallur.png" 
+                      alt="Residential Project - OMR Sholinganallur">
+                </div>
                 <div class="project-content">
                     <span class="project-status">Completed</span>
                     <h3>Residential Project</h3>
                     <p class="project-location">📍 OMR, Sholinganallur</p>
                 </div>
             </div>
+            
 
             <div class="project-card">
                 <div class="project-image">🏢</div>
